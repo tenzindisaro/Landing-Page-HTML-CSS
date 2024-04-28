@@ -2,13 +2,14 @@
     --primary-color: #0A1128;
     --white-color: white;
     --secondery-color: purple;
-    --light-gray-color: #EEEEE;
+    --light-gray-color: rgb(220, 220, 220);
     --gap: 3rem;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 62,5%;
@@ -65,6 +66,34 @@ p {
     margin-bottom: 3rem;
 }
 
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color) ;
+}
+
+tfoot td, table th {
+    background: var(--light-gray-color);
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
 .main-bg {    
     background-image: url('../img/main-bg.svg');
     background-position: center center;
@@ -80,7 +109,7 @@ p {
 .main-content{
     max-width: 120rem;
     margin: 0 auto;    
-    padding: 10rem var(--gap);
+    padding: 5rem var(--gap);
 }
 
 .section {
@@ -149,7 +178,7 @@ p {
 
 .intro-content {
     position: relative;
-    top: -8rem;
+    /* top: -8rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
@@ -228,4 +257,159 @@ p {
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {    
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, 
+.form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.full-with {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;    
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    border: 0.5rem solid var(--white-color);
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    font-size: 2rem;
+}
+
+.footer {
+    text-align: center;
+    color: rgb(57, 29, 169);
+    margin-top: 2rem; 
+    font-style: italic;  
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 40%;
+    color: var(--primary-color);
+}
+
+.back-to-top:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: 0.2rem solid var(--secondery-color);
+    font-style: italic;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .intro-content, .grid-top3  {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .menu {
+        bottom: 0;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+    .menu-spacing {
+        display: none;
+    }
 }

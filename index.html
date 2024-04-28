@@ -6,20 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="main-bg">    
+<body>    
+    <input type="checkbox" id="close-menu" class="close-menu" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    
     <aside class="menu white-bg">
         <section class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="">LOGO</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#dragon">dragon</a></li>
                     <li><a href="#top3">top 3</a></li>
                     <li><a href="#gallery">gallery</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
     </section>
@@ -109,6 +112,120 @@
             </div>
         </div>
     </section>
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content dragon-content">
+            <h2>pricing</h2>
+            <p>Goku foi baseado em Tanton, o protagonista da série Dragon Boy e um dos primeiros 
+                personagens de Toriyama[5] (nessa história, a principal característica física de 
+                Tanton era um par de asas). Quando Akira decidiu criar Dragon Ball, ele usou o 
+                romance Jornada ao Oeste, de Wu Cheng'en, como inspiração.</p>
+            <p> O nome adotado por Toriyama para o personagem é a escrita japonesa do nome chinês Sun Wukong, que é a personagem central da história. Para ser criativo com o personagem, Toriyama declarou que ele projetou Goku para ser um garoto humano com um rabo de macaco,
+                 em vez de ser um símio completo como Sun Wukong.</p>
+
+                 <div class="responsive-table">
+                    <table>
+                        <caption>Pricing Table</caption>
+        
+                        <thead>
+                            <tr>
+                                <th>Title 1</th>
+                                <th>Title 2</th>
+                                <th>Title 3</th>
+                            </tr>
+                        </thead>
+        
+                        <tbody>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Testando</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+        </div>        
+        
+    </section>
+
+    <section id="contact" class="intro main-bg section"> 
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Contact us</h2>
+                <p>Monstros amedrontadores, criaturas exóticas, riquezas vastas, 
+                    tesouros misteriosos, terras vis e terras inexploradas... 
+                    Gon parte em uma aventura para se tornar um caçador profissional 
+                    que arrisca a própria vida em busca do desconhecido. Pelo caminho, 
+                    ele conhece outros participantes da Prova dos Caçadores: Kurapika, 
+                    Leorio e Killua. Será Gon capaz de vencer os grandes desafios da Prova 
+                    de Caçadores e se tornar o melhor do mundo? 
+                    Esta jornada selvagem e épica está prestes a começar!!</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/coantact-us.svg" alt="imagem de uma mulher com  um papel na mão">
+            </div>
+
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact Me</legend>
+                    
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Name">
+                    </div>                             
+                    
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group full-with">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message..."></textarea>
+                    </div>
+
+                    <div class="form-group full-with">
+                        <button type="submit">Send Message</button>
+                    </div>
+                    
+                </fieldset>
+            </div>
+
+        </div>        
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p>♠ Landing Page - Tenzin Disaro ♠</p>
+    </footer>
+
+    <a class="back-to-top" href="#">Back Top</a>
 
 </body>
 </html>
