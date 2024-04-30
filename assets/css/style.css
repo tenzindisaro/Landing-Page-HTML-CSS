@@ -272,7 +272,7 @@ tfoot td, table th {
 }
 
 .form-group {
-    flex: 1 1 320px;
+    flex: 1 1 520px;
 }
 
 .form-grid legend {
@@ -287,7 +287,8 @@ tfoot td, table th {
 }
 
 .form-group input, 
-.form-group textarea {
+.form-group textarea,
+.form-group select {
     border: none;
     background: var(--white-color);
     padding: 1.5rem 2rem;
