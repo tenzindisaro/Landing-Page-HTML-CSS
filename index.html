@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>&#9813; LOGO</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>    
@@ -185,24 +185,16 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="state">Estado</label>
-                        <select name="state" id="state">
-                            <!-- Opções de estados recebidas via XML -->
-                            <option value="estado1">Estado 1</option>
-                            <option value="estado2">Estado 2</option>
-                            <option value="estado3">Estado 3</option>
-                            <!-- Adicione mais opções conforme necessário -->
+                        <label for="country">País</label>
+                        <select name="country" id="country" required>
+                            <option value="" disabled selected hidden>Select</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="country">País</label>
-                        <select name="country" id="country">
-                            <!-- Opções de países recebidas via XML -->
-                            <option value="pais1">País 1</option>
-                            <option value="pais2">País 2</option>
-                            <option value="pais3">País 3</option>
-                            <!-- Adicione mais opções conforme necessário -->
+                        <label for="state">Estado</label>
+                        <select name="state" id="state" required>
+                            <option value="" disabled selected hidden>Select</option>
                         </select>
                     </div>
 
@@ -213,22 +205,28 @@
 
                     <div class="form-group">
                         <label for="degree">Grau Acadêmico</label>
-                        <select name="degree" id="degree">
-                            <!-- Opções de grau acadêmico recebidas via XML -->
+                        <select name="degree" id="degree" required>
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="certificado_tecnico">Certificado Técnico</option>
+                            <option value="grau_associado">Associate Degree (Grau de Associado)</option>
+                            <option value="bacharelado">Bachelor's Degree (Bacharelado)</option>
+                            <option value="mestrado">Master's Degree (Mestrado)</option>
+                            <option value="doutorado">Doctoral Degree (Doutorado/Ph.D.)</option>
                         </select>
                     </div>
+                    
 
                     <div class="form-group">
                         <label for="university">Instituição de Ensino</label>
-                        <select name="university" id="university">
-                            <!-- Opções de instituições de ensino recebidas via XML -->
+                        <select name="university" id="university" required>
+                            <option value="" disabled selected hidden>Select</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="study-field">Área de Estudo</label>
-                        <select name="study-field" id="study-field">
-                            <!-- Opções de áreas de estudo recebidas via XML -->
+                        <select name="study-field" id="study-field" required>
+                            <option value="" disabled selected hidden>Select</option>
                         </select>
                     </div>
 
@@ -252,6 +250,8 @@
     </footer>
 
     <a class="back-to-top" href="#">Back &#9757;Top</a>
+
+    <script src="assets/js/scripts.js"></script>
 
 </body>
 </html>

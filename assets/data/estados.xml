@@ -1,0 +1,30 @@
+<estados>
+    <estado sigla="OTHR">Other</estado>
+    <estado sigla="AC">Acre</estado>
+    <estado sigla="AL">Alagoas</estado>
+    <estado sigla="AP">Amapá</estado>
+    <estado sigla="AM">Amazonas</estado>
+    <estado sigla="BA">Bahia</estado>
+    <estado sigla="CE">Ceará</estado>
+    <estado sigla="DF">Distrito Federal</estado>
+    <estado sigla="ES">Espírito Santo</estado>
+    <estado sigla="GO">Goiás</estado>
+    <estado sigla="MA">Maranhão</estado>
+    <estado sigla="MT">Mato Grosso</estado>
+    <estado sigla="MS">Mato Grosso do Sul</estado>
+    <estado sigla="MG">Minas Gerais</estado>
+    <estado sigla="PA">Pará</estado>
+    <estado sigla="PB">Paraíba</estado>
+    <estado sigla="PR">Paraná</estado>
+    <estado sigla="PE">Pernambuco</estado>
+    <estado sigla="PI">Piauí</estado>
+    <estado sigla="RJ">Rio de Janeiro</estado>
+    <estado sigla="RN">Rio Grande do Norte</estado>
+    <estado sigla="RS">Rio Grande do Sul</estado>
+    <estado sigla="RO">Rondônia</estado>
+    <estado sigla="RR">Roraima</estado>
+    <estado sigla="SC">Santa Catarina</estado>
+    <estado sigla="SP">São Paulo</estado>
+    <estado sigla="SE">Sergipe</estado>
+    <estado sigla="TO">Tocantins</estado>
+</estados>

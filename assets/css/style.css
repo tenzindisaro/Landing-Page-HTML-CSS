@@ -293,7 +293,7 @@ tfoot td, table th {
     background: var(--white-color);
     padding: 1.5rem 2rem;
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .full-with {
@@ -317,7 +317,8 @@ tfoot td, table th {
     color: var(--primary-color);
 }
 
-.form-group ::placeholder {
+.form-group ::placeholder,
+.form-group option {
     font-size: 2rem;
 }
 
