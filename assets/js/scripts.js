@@ -79,3 +79,35 @@ document.addEventListener("DOMContentLoaded", function() {
     populateUniversities();
     populateStudyFields();
 });
+
+
+
+function generateJSON() {
+    // Captura dos valores dos campos do formulário
+    var firstName = document.getElementById('first-name').value;
+    var lastName = document.getElementById('last-name').value;
+    var address = document.getElementById('address').value;
+    var country = document.getElementById('country').value;
+    var state = document.getElementById('state').value;
+    var email = document.getElementById('email').value;
+    var degree = document.getElementById('degree').value;
+    var university = document.getElementById('university').value;
+    var studyField = document.getElementById('study-field').value;
+    var message = document.getElementById('message').value;
+
+    // Criação do objeto JSON com os valores capturados
+    var jsonData = {
+        "First Name": firstName,
+        "Last Name": lastName,
+        "Address": address,
+        "Country": country,
+        "State": state,
+        "Email": email,
+        "Degree": degree,
+        "University": university,
+        "Study Field": studyField,
+        "Message": message
+    };
+
+    alert(JSON.stringify(jsonData)); 
+}
